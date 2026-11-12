@@ -3,19 +3,55 @@
 <head>
 <title>WEB1 - CSS</title>
 <meta charset="utf-8">
+<style>
+    body{
+        margin:0;
+    }
+    a{
+        color:black;
+        text-decoration: none;
+    }
+    h1 {
+        font-size:60px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+    }
+    ol{
+        border-right:1px solid gray;
+        width:100px;
+        margin:0;
+        padding:20px;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+        padding-left: 33px;
+    }
+    #grid #article{
+        padding-left: 25px;
+    }
+</style>
 </head>
 <body>
     <h1><a href="index.html">WEB</a></h1>
-    <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-    </ol>
-    <h2>CSS</h2>
-    <P>
-    케이크는 유럽식 제과류의 일종이다.<br> 밀가루, 계란, 우유, 설탕, 버터로 거품을 내거나 팽창제를 써서 만들며, 대개는 맛이 달고 식감이 부드럽다.<br>
-    파운드케이크만 생각해도 그렇듯 상기한 재료와 방법으로 제조하면 다 케이크라고 할 수 있지만, 대한민국에서는 흔히 (지름이나 밑변이 높이보다 긴) 원기둥이나 육면체 베이스에 생크림이나 녹인 초콜릿 등으로 겉을 싸고 그 위에 각종 장식을 얹은 식품, 즉 데코레이션 케이크를 가리킨다.<br> <P><img src="Cake.jpg" width="100%"></P>흔히 생일이나 성탄절 같은 기념일에 축하하며 먹는 음식으로 나온다.<br>사실 케이크는 사람들이 케이크라고 생각하는 음식에서의 시트(Sheet) 부분에 해당한다.<br> 이 시트 부분의 정식 명칭은 스펀지케이크(제누아즈)이다. 즉, 생크림, 과자, 과일, 초콜릿 등은 모두 장식으로 올라가는 것이다. <br>흔히 생각하는 모양새인 케이크의 정식 명칭은 보통 데코레이션 케이크. 그 외에 롤케이크, 팬케이크 등 여러 가지가 있지만, 왠지 이 데코레이션 케이크가 케이크 그 자체이자 표준이 되어버렸다.
-    </P>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html" class="saw">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ol>
+        <di id="article">
+            <h2>CSS</h2>
+            <P>
+            케이크는 유럽식 제과류의 일종이다.<br> 밀가루, 계란, 우유, 설탕, 버터로 거품을 내거나 팽창제를 써서 만들며, 대개는 맛이 달고 식감이 부드럽다.<br>
+            파운드케이크만 생각해도 그렇듯 상기한 재료와 방법으로 제조하면 다 케이크라고 할 수 있지만, 대한민국에서는 흔히 (지름이나 밑변이 높이보다 긴) 원기둥이나 육면체 베이스에 생크림이나 녹인 초콜릿 등으로 겉을 싸고 그 위에 각종 장식을 얹은 식품, 즉 데코레이션 케이크를 가리킨다.<br> <P><img src="Cake.jpg" width="50%"></P>흔히 생일이나 성탄절 같은 기념일에 축하하며 먹는 음식으로 나온다.<br>사실 케이크는 사람들이 케이크라고 생각하는 음식에서의 시트(Sheet) 부분에 해당한다.<br> 이 시트 부분의 정식 명칭은 스펀지케이크(제누아즈)이다. 즉, 생크림, 과자, 과일, 초콜릿 등은 모두 장식으로 올라가는 것이다. <br>흔히 생각하는 모양새인 케이크의 정식 명칭은 보통 데코레이션 케이크. 그 외에 롤케이크, 팬케이크 등 여러 가지가 있지만, 왠지 이 데코레이션 케이크가 케이크 그 자체이자 표준이 되어버렸다.
+            </P>
+         </div>
+    </div>
     <p>
     <div id="disqus_thread"></div>
     <script>
